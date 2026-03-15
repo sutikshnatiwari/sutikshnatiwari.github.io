@@ -113,6 +113,9 @@
     .sk-pct{font-size:.76rem;color:var(--gold);font-weight:700}
     .sk-bar{height:3px;background:rgba(255,255,255,.06);border-radius:10px;overflow:hidden}
     .sk-fill{height:100%;border-radius:10px;background:linear-gradient(90deg,var(--gold),var(--gold2));width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+    .skill-desc{color:var(--muted);font-size:.8rem;line-height:1.75;margin-bottom:16px}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:6px}
+    .stag{padding:3px 10px;border-radius:100px;font-size:.67rem;font-weight:700;background:rgba(232,184,75,.07);color:var(--gold);border:1px solid rgba(232,184,75,.18)}
 
     /* ── PROJECTS ── */
     .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
@@ -324,36 +327,53 @@
 <div class="section" id="skills">
   <div class="sec-label">Skills</div>
   <h2>What I Bring</h2>
-  <p class="sec-sub">Full-stack finance skills spanning modeling, data tools, strategic analysis, and communication.</p>
+  <p class="sec-sub">A finance professional who bridges rigorous analysis with strategic thinking &mdash; from building models to influencing decisions at the C-suite level.</p>
   <div class="skills-grid">
+
     <div class="skill-box">
       <div class="skill-box-head"><div class="skill-ico">📐</div><div class="skill-box-name">Financial Modeling</div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">3-Statement Modeling</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">DCF &amp; Comps</span><span class="sk-pct">93%</span></div><div class="sk-bar"><div class="sk-fill" style="width:93%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">LBO Modeling</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Scenario Analysis</span><span class="sk-pct">93%</span></div><div class="sk-bar"><div class="sk-fill" style="width:93%"></div></div></div>
+      <p class="skill-desc">I build models that drive decisions &mdash; not just spreadsheets. From 3-statement models and DCF valuations to LBO structuring and scenario analysis, I&apos;ve applied these across live deals, course projects, and FP&amp;A cycles.</p>
+      <div class="skill-tags">
+        <span class="stag">3-Statement Modeling</span>
+        <span class="stag">DCF &amp; Comps</span>
+        <span class="stag">LBO</span>
+        <span class="stag">Scenario Analysis</span>
+      </div>
     </div>
+
     <div class="skill-box">
       <div class="skill-box-head"><div class="skill-ico">🛠️</div><div class="skill-box-name">Technical Tools</div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Excel / VBA</span><span class="sk-pct">97%</span></div><div class="sk-bar"><div class="sk-fill" style="width:97%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Python (Pandas, NumPy)</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Power BI</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">SQL &middot; NetSuite &middot; Xero</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
+      <p class="skill-desc">I automate the repetitive and focus on the insight. Advanced Excel and VBA for modeling, Python (Pandas, NumPy) for data pipelines, Power BI for executive dashboards &mdash; used to cut a 7-day forecast cycle to 3 days.</p>
+      <div class="skill-tags">
+        <span class="stag">Excel / VBA</span>
+        <span class="stag">Python</span>
+        <span class="stag">Power BI</span>
+        <span class="stag">SQL &middot; NetSuite &middot; Xero</span>
+      </div>
     </div>
+
     <div class="skill-box">
       <div class="skill-box-head"><div class="skill-ico">📈</div><div class="skill-box-name">Strategic Finance</div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">FP&amp;A &amp; Forecasting</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Financial Due Diligence</span><span class="sk-pct">92%</span></div><div class="sk-bar"><div class="sk-fill" style="width:92%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Capital Allocation</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" style="width:88%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Unit Economics &amp; KPIs</span><span class="sk-pct">93%</span></div><div class="sk-bar"><div class="sk-fill" style="width:93%"></div></div></div>
+      <p class="skill-desc">I connect numbers to strategy. From leading $11M Series A due diligence to building FP&amp;A systems from scratch, I translate financial data into capital allocation decisions and growth recommendations that leadership acts on.</p>
+      <div class="skill-tags">
+        <span class="stag">FP&amp;A &amp; Forecasting</span>
+        <span class="stag">Due Diligence</span>
+        <span class="stag">Capital Allocation</span>
+        <span class="stag">Unit Economics</span>
+      </div>
     </div>
+
     <div class="skill-box">
-      <div class="skill-box-head"><div class="skill-ico">💬</div><div class="skill-box-name">Communication</div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Executive Presentations</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Competitive Analysis</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Investor Relations</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" style="width:88%"></div></div></div>
-      <div class="sk"><div class="sk-row"><span class="sk-name">Cross-functional Leadership</span><span class="sk-pct">92%</span></div><div class="sk-bar"><div class="sk-fill" style="width:92%"></div></div></div>
+      <div class="skill-box-head"><div class="skill-ico">💬</div><div class="skill-box-name">Communication &amp; Leadership</div></div>
+      <p class="skill-desc">Finance only creates value when it&apos;s understood. I&apos;ve presented QBRs to C-suites, pitched to VC panels, and led cross-functional teams of 15 &mdash; turning complex analysis into clear, compelling narratives for any audience.</p>
+      <div class="skill-tags">
+        <span class="stag">Executive Presentations</span>
+        <span class="stag">Investor Pitching</span>
+        <span class="stag">Competitive Analysis</span>
+        <span class="stag">Team Leadership</span>
+      </div>
     </div>
+
   </div>
 </div>
 
@@ -587,12 +607,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+cur));
   },{passive:true});
 
-  // Skill bars
-  const fills=document.querySelectorAll('.sk-fill');
-  const so=new IntersectionObserver(es=>{
-    es.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.w;so.unobserve(e.target)}});
-  },{threshold:.3});
-  fills.forEach(f=>{f.dataset.w=f.style.width;f.style.width='0';so.observe(f)});
+  // Skill bars removed — replaced with descriptive cards
 
   // Fade in
   const fels=document.querySelectorAll('.info-card,.tl-item,.skill-box,.proj-card,.cert-card,.edu-card,.contact-link');
