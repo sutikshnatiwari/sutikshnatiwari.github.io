@@ -91,6 +91,19 @@ footer{border-top:1px solid #ddd;padding:40px 48px;text-align:center;color:#666;
   nav{padding:12px 16px}
   .nav-links{display:none}
 }
+
+.tl-item{display:flex;gap:24px;padding-bottom:40px;position:relative}
+.tl-card{flex:1;min-width:0;display:flex;gap:24px;background:#fff;border:1px solid #ddd;border-radius:12px;padding:20px;align-items:flex-start;transition:border-color .2s}
+.tl-card:hover{border-color:#b8953a}
+.tl-art{width:140px;height:105px;flex-shrink:0;border-radius:10px;background:linear-gradient(135deg,#f6efe0,#eef1f6);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid #ddd}
+.tl-art svg,.proj-image svg{height:100%;width:auto;max-width:100%}
+.tl-text{flex:1;min-width:0}
+.tl-head{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+.tl-list li{position:relative}
+.proj-image{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#f6efe0,#eef1f6);display:flex;align-items:center;justify-content:center;padding:18px}
+.proj-link{font-size:.85rem;font-weight:600;color:#2563eb}
+.proj-link:hover{color:#b8953a}
+@media(max-width:600px){.tl-card{flex-direction:column}.tl-art{width:100%;height:130px}.tl-item{gap:14px}}
 </style>
 </head>
 <body>
@@ -99,8 +112,8 @@ footer{border-top:1px solid #ddd;padding:40px 48px;text-align:center;color:#666;
 
 <div id="hero">
   <div class="hero-text">
-    <h1>Finance & Strategy <span class="highlight">Across Markets</span></h1>
-    <p class="hero-desc">MBA/MS candidate at BU Questrom. Teaching Associate (Internship) at Training The Street, delivering 350+ hours of finance modeling, M&A, and LBO training to 2,000+ analysts. Owned planning across five businesses generating $700M+ in revenue. 5+ years in finance. Dean's Scholar. Bloomberg Certified.</p>
+    <h1>Finance &amp; Strategy <span class="highlight">Across Markets</span></h1>
+    <p class="hero-desc">MBA/MS candidate at BU Questrom. Teaching Associate (Internship) at Training The Street, teaching finance modeling and valuation to 2,000+ analysts. Owned planning across five businesses generating $700M+ in revenue. 5+ years in finance. Dean's Scholar. Bloomberg Certified.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View My Work</a>
       <a href="#contact" class="btn-secondary">Get in Touch</a>
@@ -108,37 +121,40 @@ footer{border-top:1px solid #ddd;padding:40px 48px;text-align:center;color:#666;
   </div>
   <div class="hero-image">
     <img src="assets/photo.jpg" alt="Sutikshna Tiwari"/>
-    </div>
+  </div>
 </div>
 
 <div class="section alt" id="story">
   <div class="section-header">
     <h2>A Story Rooted in <span class="highlight">Commerce</span></h2>
-    <p>Four generations of family business shaped how I think about finance, margin, and building real value.</p>
+    <p>Five generations of family business taught me that every decision has a number behind it.</p>
   </div>
   <div class="story-grid">
     <div class="story-text">
-      <p>I grew up in <strong>Kolkata, India</strong>, in a family that has been in fresh produce trading for over <em>100 years</em>. That foundation shaped my instinct for commerce. I studied <strong>Accounting & Finance</strong> at Jadavpur University, then moved to startup environments where that intuition became professional practice.</p>
-      <p>At <strong>BuyBindass</strong> (D2C), I co-founded finance from zero. At <strong>Nivoda</strong> (Headline-backed), I led a <strong>$11M Series A</strong>. At <strong>Acro Service Corp</strong>, I owned planning for five businesses generating $700M+ in revenue and delivered $4M+ in operating impact. Now at <strong>BU Questrom</strong>, I'm teaching next-generation finance professionals as a Teaching Associate (Internship) at Training The Street.</p>
+      <p>I grew up in <strong>Kolkata, India</strong>, in a family that has traded fresh produce for over <em>100 years</em>. Watching my family run that business taught me that margin is the difference between a good year and a bad one, and that every decision has a number behind it.</p>
+      <p>I studied <strong>Accounting &amp; Finance</strong> at Jadavpur University. Before I graduated, I co-founded <strong>BuyBindass</strong>, a D2C business, and built its finance from zero: the general ledger, vendor payment workflows, cost allocation, working capital, and internal controls. Taking it from online sales to a retail outlet and manufacturing taught me what finance looks like when it has to run a real company.</p>
+      <p>At <strong>Nivoda</strong>, a Headline-backed B2B diamond marketplace, I managed the financial due diligence for an <em>$11M Series A</em> at a $55M post-money valuation. I also built a multi-currency profitability model across 500+ SKUs that helped lift gross margin from 35% to 52%.</p>
+      <p>At <strong>Acro Service Corp</strong>, I owned two annual budgets and forecasts across five businesses generating $700M+ in revenue. I automated variance analysis with SQL, Python, and Power BI, cutting reporting turnaround from seven days to three, and presented results to C-suite leaders.</p>
+      <p>Now I'm doing my <strong>MBA and MS in Digital Technology</strong> at BU Questrom, with a Corporate Finance concentration, and I serve as Vice President of the Finance &amp; Investment Club. Since May I've been a <strong>Teaching Associate (Internship)</strong> at Training The Street, teaching three-statement modeling and DCF valuation to more than 2,000 analysts and associates.</p>
       <div class="stats-grid">
         <div><div class="stat-num">100+</div><div class="stat-label">Years Family Business</div></div>
-        <div><div class="stat-num">5</div><div class="stat-label">Years in Finance</div></div>
-        <div><div class="stat-num">$11M</div><div class="stat-label">Series A Led</div></div>
+        <div><div class="stat-num">5+</div><div class="stat-label">Years in Finance</div></div>
+        <div><div class="stat-num">$11M</div><div class="stat-label">Series A Diligence</div></div>
         <div><div class="stat-num">17pp</div><div class="stat-label">Margin Improved</div></div>
       </div>
     </div>
     <div class="info-cards">
       <div class="info-card">
         <div class="ic-icon">🎓</div>
-        <div><div class="ic-title">Education</div><div class="ic-body"><strong>MBA/MS Digital Technology</strong> — Boston University Questrom, 2025–2027. Dean's Scholar. Forté Fellow. VP, Finance &amp; Investment Club.</div></div>
+        <div><div class="ic-title">Education</div><div class="ic-body"><strong>MBA/MS Digital Technology</strong> — Boston University Questrom, 2025–2027. Dean's Scholar. Forté Fellow.</div></div>
       </div>
       <div class="info-card">
         <div class="ic-icon">📍</div>
-        <div><div class="ic-title">Current Role</div><div class="ic-body"><strong>Teaching Associate (Internship), Training The Street</strong> — Three-statement modeling, DCF, M&amp;A, and LBO analysis at bulge-bracket banks.</div></div>
+        <div><div class="ic-title">Current Role</div><div class="ic-body"><strong>Teaching Associate (Internship), Training The Street</strong> — Three-statement modeling and DCF valuation for analysts at bulge-bracket banks. Through Dec 15, 2026.</div></div>
       </div>
       <div class="info-card">
         <div class="ic-icon">🌿</div>
-        <div><div class="ic-title">Roots</div><div class="ic-body"><strong>Kolkata, India</strong> — 100+ year family trading business, 4 generations</div></div>
+        <div><div class="ic-title">Roots</div><div class="ic-body"><strong>Kolkata, India</strong> — 100+ year family produce business, 5 generations</div></div>
       </div>
     </div>
   </div>
@@ -147,57 +163,70 @@ footer{border-top:1px solid #ddd;padding:40px 48px;text-align:center;color:#666;
 <div class="section" id="experience">
   <div class="section-header">
     <h2>Professional Journey</h2>
-    <p>Three distinct chapters — each building on the last, across India and the US.</p>
+    <p>Newest first. Four chapters across India and the US.</p>
   </div>
   <div class="timeline">
     <div class="tl-item">
+      <div class="tl-dot">🚀</div>
+      <div class="tl-card">
+        <div class="tl-art"><svg viewBox="0 0 120 90" aria-hidden="true"><rect x="14" y="12" width="92" height="56" rx="5" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><polyline points="28,50 46,36 60,42 84,24" fill="none" stroke="#b8953a" stroke-width="3"/><circle cx="84" cy="24" r="3.5" fill="#b8953a"/><line x1="40" y1="78" x2="80" y2="78" stroke="#1a1a1a" stroke-width="2"/><line x1="60" y1="68" x2="60" y2="78" stroke="#1a1a1a" stroke-width="2"/></svg></div>
+        <div class="tl-text">
+          <div class="tl-head"><div class="tl-role">Teaching Associate — Internship</div><div class="tl-date">May 2026 – Dec 15, 2026</div></div>
+          <div class="tl-company">Training The Street · New York, NY / Remote</div>
+          <ul class="tl-list">
+            <li>Delivered <strong>350+ instructional hours</strong> to 2,000+ incoming analysts and associates across 22 sessions</li>
+            <li>Taught three-statement modeling and DCF valuation at bulge-bracket investment banks</li>
+            <li>Designed course materials, Excel modeling templates, and valuation exercises with instructors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tl-item">
       <div class="tl-dot">📊</div>
-      <div>
-        <div style="display:flex;gap:12px;margin-bottom:8px"><div class="tl-role">Senior Financial Analyst</div><div class="tl-date">Apr 2023 – Jul 2025</div></div>
-        <div class="tl-company">Acro Service Corp · Livonia, MI</div>
-        <ul class="tl-list">
-          <li>Owned two annual budgets and twice-yearly forecasts across five businesses ($700M+ revenue), with forecasts within <strong>2–3% of actuals</strong></li>
-          <li>Cut reporting turnaround <strong>57% (7 → 3 days)</strong> by automating variance analysis with SQL, Python, and Power BI</li>
-          <li>Built 20+ KPI dashboards; EBITDA margin <strong>12% → 20%</strong> in selected divisions (<strong>$4M+ operating impact</strong>)</li>
-        </ul>
+      <div class="tl-card">
+        <div class="tl-art"><svg viewBox="0 0 120 90" aria-hidden="true"><rect x="14" y="10" width="92" height="70" rx="5" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><rect x="26" y="48" width="12" height="22" fill="#b8953a"/><rect x="44" y="36" width="12" height="34" fill="#1a1a1a"/><rect x="62" y="26" width="12" height="44" fill="#b8953a"/><rect x="80" y="40" width="12" height="30" fill="#1a1a1a"/></svg></div>
+        <div class="tl-text">
+          <div class="tl-head"><div class="tl-role">Senior Financial Analyst</div><div class="tl-date">Apr 2023 – Jul 2025</div></div>
+          <div class="tl-company">Acro Service Corp · Livonia, MI / Remote</div>
+          <ul class="tl-list">
+            <li>Owned two annual budgets and twice-yearly forecasts across five businesses (<strong>$700M+ revenue</strong>), with forecasts within <strong>2–3% of actuals</strong></li>
+            <li>Cut reporting turnaround <strong>57% (7 → 3 days)</strong> by automating variance analysis with SQL, Python, and Power BI</li>
+            <li>Built 20+ KPI dashboards; EBITDA margin <strong>12% → 20%</strong> in selected divisions (<strong>$4M+ operating impact</strong>)</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="tl-item">
       <div class="tl-dot">💎</div>
-      <div>
-        <div style="display:flex;gap:12px;margin-bottom:8px"><div class="tl-role">Finance Associate</div><div class="tl-date">Mar 2022 – Apr 2023</div></div>
-        <div class="tl-company">Nivoda (Headline-backed B2B Diamond Marketplace) · Mumbai, India</div>
-        <ul class="tl-list">
-          <li>Managed the due diligence data room, cap table, and five-year models for the <strong>$11M Series A</strong> at a $55M post-money valuation</li>
-          <li>Built a multi-currency profitability model across <strong>500+ SKUs</strong>; gross margin <strong>35% → 52%</strong></li>
-          <li>Established management reporting across six regional entities during <strong>80% YoY</strong> cross-border expansion</li>
-        </ul>
-      </div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot">🚀</div>
-      <div>
-        <div style="display:flex;gap:12px;margin-bottom:8px"><div class="tl-role">Teaching Associate — Internship</div><div class="tl-date">May 2026 – Present</div></div>
-        <div class="tl-company">Training The Street · New York, NY / Remote</div>
-        <ul class="tl-list">
-          <li>Delivered <strong>350+ instructional hours</strong> to 2,000+ incoming analysts and associates across 22 sessions</li>
-          <li>Taught three-statement modeling, DCF valuation, M&A, and LBO analysis at bulge-bracket investment banks</li>
-          <li>Designed course materials, Excel modeling templates, and valuation exercises with instructors</li>
-        </ul>
+      <div class="tl-card">
+        <div class="tl-art"><svg viewBox="0 0 120 90" aria-hidden="true"><polygon points="60,12 92,34 60,80 28,34" fill="#fff" stroke="#b8953a" stroke-width="3" stroke-linejoin="round"/><polyline points="28,34 92,34" fill="none" stroke="#b8953a" stroke-width="2"/><polyline points="44,34 60,12 76,34 60,80" fill="none" stroke="#b8953a" stroke-width="2"/></svg></div>
+        <div class="tl-text">
+          <div class="tl-head"><div class="tl-role">Finance Associate</div><div class="tl-date">Mar 2022 – Apr 2023</div></div>
+          <div class="tl-company">Nivoda (Headline-backed B2B Diamond Marketplace) · Mumbai, India</div>
+          <ul class="tl-list">
+            <li>Managed the due diligence data room, cap table, and five-year models for the <strong>$11M Series A</strong> at a $55M post-money valuation</li>
+            <li>Built a multi-currency profitability model across <strong>500+ SKUs</strong>; gross margin <strong>35% → 52%</strong></li>
+            <li>Established management reporting across six regional entities during <strong>80% YoY</strong> cross-border expansion</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="tl-item">
       <div class="tl-dot">🏪</div>
-      <div>
-        <div style="display:flex;gap:12px;margin-bottom:8px"><div class="tl-role">Co-Founder, Finance & Operations</div><div class="tl-date">Jan 2020 – Mar 2022</div></div>
-        <div class="tl-company">BuyBindass.com · Kolkata, India</div>
-        <ul class="tl-list">
-          <li>Co-founded the company and built finance and operations from inception: general ledger, vendor payments, cost allocation, internal controls</li>
-          <li>Grew the business from online sales to a retail outlet and manufacturing integration within two years; led a team of <strong>15+</strong></li>
-          <li>Built working capital and unit economics models supporting <strong>180% YoY revenue growth</strong>; raised seed capital</li>
-        </ul>
+      <div class="tl-card">
+        <div class="tl-art"><svg viewBox="0 0 120 90" aria-hidden="true"><path d="M44 36 V28 a16 16 0 0 1 32 0 V36" fill="none" stroke="#1a1a1a" stroke-width="3"/><rect x="28" y="36" width="64" height="44" rx="6" fill="#b8953a"/></svg></div>
+        <div class="tl-text">
+          <div class="tl-head"><div class="tl-role">Co-Founder, Finance & Operations</div><div class="tl-date">Jan 2020 – Mar 2022</div></div>
+          <div class="tl-company">BuyBindass.com · Kolkata, India</div>
+          <ul class="tl-list">
+            <li>Co-founded the company and built finance and operations from inception: general ledger, vendor payments, cost allocation, internal controls</li>
+            <li>Grew the business from online sales to a retail outlet and manufacturing integration within two years; led a team of <strong>15+</strong></li>
+            <li>Built working capital and unit economics models supporting <strong>180% YoY revenue growth</strong>; raised seed capital</li>
+          </ul>
+        </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -209,21 +238,21 @@ footer{border-top:1px solid #ddd;padding:40px 48px;text-align:center;color:#666;
   <div class="skills-grid">
     <div class="skill-group">
       <h3>Financial Modeling</h3>
-      <p>I build models that drive decisions — DCF, LBO, 3-statement models, scenario analysis.</p>
-      <div class="skill-tags"><span class="skill-tag">3-Statement</span><span class="skill-tag">DCF</span><span class="skill-tag">LBO</span><span class="skill-tag">Scenario</span><span class="skill-tag">Comparable Valuation</span></div>
+      <p>I build models that drive decisions: three-statement models, DCF, scenario analysis, and comparable valuation.</p>
+      <div class="skill-tags"><span class="skill-tag">3-Statement</span><span class="skill-tag">DCF</span><span class="skill-tag">Scenario</span><span class="skill-tag">Comparable Valuation</span></div>
     </div>
     <div class="skill-group">
       <h3>Technical Tools</h3>
-      <p>I automate the repetitive and focus on insight. Python, Power BI, advanced Excel.</p>
-      <div class="skill-tags"><span class="skill-tag">Excel/VBA</span><span class="skill-tag">Python</span><span class="skill-tag">Power BI</span><span class="skill-tag">SQL</span><span class="skill-tag">NetSuite</span><span class="skill-tag">LLM Workflows</span></div>
+      <p>I automate the repetitive and focus on insight: Python, SQL, Power BI, advanced Excel, and LLM workflows.</p>
+      <div class="skill-tags"><span class="skill-tag">Excel</span><span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">Power BI</span><span class="skill-tag">NetSuite</span><span class="skill-tag">LLM Workflows</span></div>
     </div>
     <div class="skill-group">
       <h3>Strategic Finance</h3>
-      <p>From Series A due diligence to FP&A systems from scratch, I drive capital allocation.</p>
-      <div class="skill-tags"><span class="skill-tag">FP&A</span><span class="skill-tag">Due Diligence</span><span class="skill-tag">M&A</span><span class="skill-tag">Unit Economics</span><span class="skill-tag">Capital Allocation</span><span class="skill-tag">Fundraising</span></div>
+      <p>From due diligence on a Series A to FP&amp;A and capital allocation, I help teams decide where money should go.</p>
+      <div class="skill-tags"><span class="skill-tag">FP&amp;A</span><span class="skill-tag">Due Diligence</span><span class="skill-tag">Unit Economics</span><span class="skill-tag">Capital Allocation</span><span class="skill-tag">Fundraising</span></div>
     </div>
     <div class="skill-group">
-      <h3>Communication & Teaching</h3>
+      <h3>Communication &amp; Teaching</h3>
       <p>Finance creates value when it's understood. Executive presentations, investor pitches, education.</p>
       <div class="skill-tags"><span class="skill-tag">Presentations</span><span class="skill-tag">Pitching</span><span class="skill-tag">Teaching</span></div>
     </div>
@@ -233,71 +262,79 @@ footer{border-top:1px solid #ddd;padding:40px 48px;text-align:center;color:#666;
 <div class="section" id="projects">
   <div class="section-header">
     <h2>Featured Projects</h2>
-    <p>Finance analysis, valuations, M&A work, and case competition wins.</p>
+    <p>Finance analysis, AI tools, valuations, and case competition wins.</p>
   </div>
   <div class="projects-grid">
     <div class="project-card">
-      <div class="proj-image">🤖</div>
+      <div class="proj-image"><svg viewBox="0 0 120 90" aria-hidden="true"><g stroke="#1a1a1a" stroke-width="2"><line x1="60" y1="46" x2="28" y2="24"/><line x1="60" y1="46" x2="92" y2="24"/><line x1="60" y1="46" x2="24" y2="66"/><line x1="60" y1="46" x2="96" y2="66"/><line x1="60" y1="46" x2="60" y2="14"/></g><circle cx="60" cy="46" r="10" fill="#b8953a"/><circle cx="28" cy="24" r="7" fill="#1a1a1a"/><circle cx="92" cy="24" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><circle cx="24" cy="66" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><circle cx="96" cy="66" r="7" fill="#1a1a1a"/><circle cx="60" cy="14" r="5" fill="#b8953a"/></svg></div>
       <div class="proj-body">
-        <div class="proj-tags"><span class="proj-tag">ML</span><span class="proj-tag">PYTHON</span></div>
-        <div class="proj-title">M&A Risk & Synergy Analyzer</div>
-        <div class="proj-desc">Multi-model distress scoring (Beneish, XGBoost, NLP) across 7 sectors. 100+ year backtesting. Real-time yfinance data integration.</div>
+        <div class="proj-tags"><span class="proj-tag">GEN AI</span><span class="proj-tag">STREAMLIT</span></div>
+        <div class="proj-title">Competitor News Intelligence — Team Project</div>
+        <div class="proj-desc">Streamlit app that tracks four competitors for a fintech strategy team. Gemini classifies each news item by move type (such as product, financial, expansion, or regulatory), scores its significance, and attaches a quote as evidence. I own automated news collection. Classification and quote checks are in progress.</div>
+        <a class="proj-link" href="https://is883-f26-grouppj-t2-lstdtep9xwyyfbw9nnwzwc.streamlit.app/" target="_blank" rel="noopener">Live app →</a>
       </div>
     </div>
     <div class="project-card">
-      <div class="proj-image">🏆</div>
+      <div class="proj-image"><svg viewBox="0 0 120 90" aria-hidden="true"><g stroke="#1a1a1a" stroke-width="2"><line x1="30" y1="20" x2="30" y2="72"/><line x1="52" y1="24" x2="52" y2="68"/><line x1="74" y1="18" x2="74" y2="64"/><line x1="96" y1="26" x2="96" y2="70"/></g><rect x="25" y="34" width="10" height="20" fill="#b8953a"/><rect x="47" y="38" width="10" height="20" fill="#1a1a1a"/><rect x="69" y="28" width="10" height="22" fill="#b8953a"/><rect x="91" y="40" width="10" height="18" fill="#1a1a1a"/></svg></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="proj-tag">ML</span><span class="proj-tag">PYTHON</span></div>
+        <div class="proj-title">M&amp;A Risk &amp; Synergy Analyzer</div>
+        <div class="proj-desc">Multi-model distress scoring (Beneish, XGBoost, NLP) across 7 sectors. 100+ year backtesting. Real-time yfinance data integration.</div>
+        
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="proj-image"><svg viewBox="0 0 120 90" aria-hidden="true"><path d="M30 70 C30 30 60 18 90 20 C90 56 66 74 30 70 Z" fill="#b8953a"/><line x1="36" y1="70" x2="78" y2="30" stroke="#1a1a1a" stroke-width="2"/></svg></div>
       <div class="proj-body">
         <div class="proj-tags"><span class="proj-tag">CASE WIN</span></div>
         <div class="proj-title">BVC Best of the Board — 1st Place 🥇</div>
         <div class="proj-desc">Cannabis D2C subscription model. 10% YoY sales growth projected. TAM expansion across Massachusetts.</div>
+        
       </div>
     </div>
     <div class="project-card">
-      <div class="proj-image">💎</div>
-      <div class="proj-body">
-        <div class="proj-tags"><span class="proj-tag">SERIES A</span></div>
-        <div class="proj-title">Nivoda — $11M Series A Diligence</div>
-        <div class="proj-desc">Headline-led funding at $55M post-money. 500+ SKU profitability analysis. 17pp gross margin improvement.</div>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="proj-image">📊</div>
+      <div class="proj-image"><svg viewBox="0 0 120 90" aria-hidden="true"><ellipse cx="44" cy="34" rx="11" ry="6" fill="#1a1a1a" transform="rotate(-20 44 34)"/><ellipse cx="66" cy="28" rx="11" ry="6" fill="#b8953a" transform="rotate(15 66 28)"/><ellipse cx="82" cy="38" rx="9" ry="5" fill="#1a1a1a" transform="rotate(-10 82 38)"/><path d="M22 44 H98 Q96 76 60 78 Q24 76 22 44 Z" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><line x1="30" y1="54" x2="90" y2="54" stroke="#b8953a" stroke-width="2"/></svg></div>
       <div class="proj-body">
         <div class="proj-tags"><span class="proj-tag">CASE WIN</span></div>
         <div class="proj-title">Sweetgreen Case Competition — 1st Place 🥇</div>
         <div class="proj-desc">Demand elasticity (ε = −4.04). Proposed Infinite Kitchen pivot: margins 19.6% → 37%.</div>
+        
       </div>
     </div>
     <div class="project-card">
-      <div class="proj-image">⚓</div>
+      <div class="proj-image"><svg viewBox="0 0 120 90" aria-hidden="true"><path d="M22 52 H98 L88 68 H32 Z" fill="#1a1a1a"/><rect x="40" y="38" width="14" height="14" fill="#b8953a"/><rect x="58" y="30" width="14" height="22" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><path d="M10 78 Q22 72 34 78 T58 78 T82 78 T110 78" fill="none" stroke="#b8953a" stroke-width="3"/></svg></div>
       <div class="proj-body">
         <div class="proj-tags"><span class="proj-tag">DCF</span></div>
         <div class="proj-title">Ocean Carriers — DCF Valuation</div>
         <div class="proj-desc">15-year model. US vs HK tax regimes. Intrinsic value $13.32/share. Sensitivity analysis.</div>
+        
       </div>
     </div>
     <div class="project-card">
-      <div class="proj-image">🌍</div>
+      <div class="proj-image"><svg viewBox="0 0 120 90" aria-hidden="true"><circle cx="60" cy="45" r="30" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><ellipse cx="60" cy="45" rx="13" ry="30" fill="none" stroke="#b8953a" stroke-width="2"/><line x1="30" y1="45" x2="90" y2="45" stroke="#b8953a" stroke-width="2"/><path d="M40 30 Q60 24 80 32" fill="none" stroke="#1a1a1a" stroke-width="1.5"/></svg></div>
       <div class="proj-body">
         <div class="proj-tags"><span class="proj-tag">STRATEGY</span></div>
         <div class="proj-title">Africa Expansion Strategy</div>
         <div class="proj-desc">54-nation site selection. South Africa primary, Morocco secondary. 10-year model.</div>
+        
       </div>
     </div>
     <div class="project-card">
-      <div class="proj-image">🏛️</div>
+      <div class="proj-image"><svg viewBox="0 0 120 90" aria-hidden="true"><polygon points="60,14 96,34 24,34" fill="#1a1a1a"/><rect x="26" y="38" width="68" height="6" fill="#b8953a"/><g fill="#fff" stroke="#1a1a1a" stroke-width="2"><rect x="34" y="46" width="8" height="22"/><rect x="50" y="46" width="8" height="22"/><rect x="66" y="46" width="8" height="22"/><rect x="82" y="46" width="8" height="22"/></g><rect x="24" y="70" width="72" height="6" fill="#1a1a1a"/></svg></div>
       <div class="proj-body">
         <div class="proj-tags"><span class="proj-tag">CONSULTING</span></div>
         <div class="proj-title">Massachusetts Higher Education — Capital Allocation</div>
         <div class="proj-desc">Phased projections and scenario analysis for a $2.1M innovation budget across 29 public campuses, plus a phased fundraising roadmap.</div>
+        
       </div>
     </div>
+
   </div>
 </div>
 
 <div class="section alt" id="education">
   <div class="section-header">
-    <h2>Education & Credentials</h2>
+    <h2>Education &amp; Credentials</h2>
     <p>Graduate and undergraduate degrees, professional certifications.</p>
   </div>
   <div style="max-width:900px;margin:0 auto">
@@ -311,7 +348,7 @@ footer{border-top:1px solid #ddd;padding:40px 48px;text-align:center;color:#666;
       </div>
       <div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:24px">
         <div style="font-size:.7rem;font-weight:700;color:#b8953a;margin-bottom:8px">UNDERGRADUATE</div>
-        <div style="font-weight:600;margin-bottom:6px">BBA Accounting & Finance</div>
+        <div style="font-weight:600;margin-bottom:6px">BBA Accounting &amp; Finance</div>
         <div style="color:#666;font-size:.85rem;margin-bottom:12px">Jadavpur University, J.D. Birla · August 2020</div>
         <div style="color:#666;font-size:.9rem">Kolkata, India.</div>
       </div>
